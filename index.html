@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador</title>
+    <link rel="icon" href="Candado.jpg" type="icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Encriptador y Desencriptador</h1>
+    </header>
+    <main>
+        <div class="box">
+            <div class="content">
+                <label for="inputText">Texto:</label>
+                <textarea id="inputText" placeholder="Ingrese texto para encriptar o desencriptar"></textarea>
+                <div class="options">
+                    <input type="radio" id="encrypt" name="operation" value="encrypt" checked>
+                    <label for="encrypt">Encriptar</label>
+                    <input type="radio" id="decrypt" name="operation" value="decrypt">
+                    <label for="decrypt">Desencriptar</label>
+                </div>
+                <button onclick="processText()">Procesar</button>
+                <button onclick="copyResult()">Copiar resultado</button>
+                <label for="outputText">Resultado:</label>
+                <textarea id="outputText" readonly></textarea>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por <strong>Vicente Rodriguez</strong> el <em>25/06/2024</em> para <strong>Challenge Encriptador de Texto</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
